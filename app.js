@@ -49,7 +49,18 @@ function calculateSide(num1, num2){
     let num3 = Math.sqrt(Math.pow(num1, 2) + Math.pow(num2, 2))
   console.log(num3)
 }
-calculateSide(4, 5)
+
+
+function sumArray(arr){
+    let numbers = arr
+    let sumOfNumbers = 0
+    for(let i = 0; i < numbers.length; i += 1){
+        sumOfNumbers += numbers[i]
+    }
+console.log(sumOfNumbers)
+}ge
+
+sumArray([1, 2, 3, 4])
 
 
 
