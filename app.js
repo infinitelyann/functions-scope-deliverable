@@ -28,15 +28,24 @@ function checkPalindrome(word){
         compare(wordLetters, reversedText)
         }
         
-function sumDigits(i){
- let digits = (''+i).split("");
-   let sum = digits[0] + digits[1]
+function sumDigits(num){
+//  let digits = (''+i).split("");
 
- console.log(digits)
- console.log(sun)
+
+let number = num
+let numberArray = Array.from(String(number), Number) 
+let arraySum = 0
+for (let i = 0; i < numberArray.length; i += 1 ){
+    arraySum += numberArray[i]
+}
+  
+
+ console.log(numberArray)
+ console.log(arraySum)
+
 }
 
-sumDigits(22)
+sumDigits(188)
 
 
 
