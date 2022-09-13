@@ -29,9 +29,6 @@ function checkPalindrome(word){
         }
         
 function sumDigits(num){
-
-
-
 let number = num
 let numberArray = Array.from(String(number), Number) 
 let arraySum = 0
@@ -58,9 +55,51 @@ function sumArray(arr){
         sumOfNumbers += numbers[i]
     }
 console.log(sumOfNumbers)
-}ge
+}
 
-sumArray([1, 2, 3, 4])
+function checkPrime(number){
+    let numCheck = Math.sqrt(number)
+    if(number <= 1){
+        console.log(`${number} is neither prime nor composite`)
+    }
+    
+    let wholeNumCheck = (numCheck - Math.floor(numCheck))
+    if(wholeNumCheck === 0){
+        console.log(`${number} is composite`)
+    }else{
+        console.log(`${number} is prime`)
+    }
+
+    console.log(`The square root of ${number} is ${wholeNumCheck}`)
+    
+}
 
 
+function printPrimes(number){
+    let numberCount = (someFunc)=>{
+    for(let i = 0; i <= number.length; i++){
+        number = Array.from(number)
+        number.push(i)
+    }
+}
+    console.log(number)
+}
 
+printPrimes(numberCount)
+
+
+// got stuck here, have to move on to difference deliverable
+
+// function checkPrime (number){
+//     if(number <= 1){
+//         return false
+//     } else{
+//     for(let i = 2; i < number; i++){
+//         if(number % i == 0){
+//           return false
+//         }else{
+//             return true
+//         }
+//     }
+//     }}
+// checkPrime(9)
