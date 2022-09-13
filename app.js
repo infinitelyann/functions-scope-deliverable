@@ -29,7 +29,7 @@ function checkPalindrome(word){
         }
         
 function sumDigits(num){
-//  let digits = (''+i).split("");
+
 
 
 let number = num
@@ -45,7 +45,11 @@ for (let i = 0; i < numberArray.length; i += 1 ){
 
 }
 
-sumDigits(188)
+function calculateSide(num1, num2){
+    let num3 = Math.sqrt(Math.pow(num1, 2) + Math.pow(num2, 2))
+  console.log(num3)
+}
+calculateSide(4, 5)
 
 
 
